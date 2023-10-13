@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Header, Footer } from '@/sections';
+import { Header, Footer } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Nike Landing Page | by Roman Fedorov',
@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <Header />
-        <main>{children}</main>
+        <main className='relative'>{children}</main>
         <Footer />
       </body>
     </html>
