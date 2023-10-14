@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { FC } from 'react';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 
@@ -8,13 +8,13 @@ interface ImgURL {
     bigShoe: string | any;
 }
 
-interface ShoeCardProps {
+interface IShoeCard {
     imgURL: ImgURL;
     onChangeImage: (arg: StaticImageData) => void;
     bigShoeImage: any;
 }
 
-const ShoeCard = ({ imgURL, onChangeImage, bigShoeImage }: ShoeCardProps) => {
+const ShoeCard: FC<IShoeCard> = ({ imgURL, onChangeImage, bigShoeImage }) => {
     const handleClick = () => {
         if (bigShoeImage !== imgURL.bigShoe) {
             onChangeImage(imgURL.bigShoe);

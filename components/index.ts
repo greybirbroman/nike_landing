@@ -4,6 +4,7 @@ import Navigation from "./Navigation";
 import Logo from "./Logo";
 import Button from "./Button";
 import ShoeCard from "./ShoeCard";
+import PopularProductCard from './PopularProductCard'
 
 export {
     Header,
@@ -11,5 +12,6 @@ export {
     Navigation,
     Logo,
     Button,
-    ShoeCard
+    ShoeCard,
+    PopularProductCard,
 }

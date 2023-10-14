@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
 import LogoImage from '../public/images/header-logo.svg'
 
 const Logo = () => {

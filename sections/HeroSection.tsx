@@ -5,14 +5,13 @@ import { Button, ShoeCard } from '@/components';
 import { arrowRight } from '@/public/icons';
 import { bigShoe1 } from '@/public/images';
 import { statistics, shoes } from '@/utils/constants';
-import { StaticImageData } from 'next/image';
 
 const HeroSection = () => {
 
     const [bigImage, setBigImage] = useState(bigShoe1)
 
     return (
-        <div className='w-full flex xl:flex-row flex-col ga-10 justify-center min-h-screen max-container p-2'>
+        <div className='w-full flex xl:flex-row flex-col gap-10 justify-center min-h-screen max-container px-2'>
             <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28'>
                 <p className='text-xl font-montserrat text-coral-red'>
                     Our Summer Collection
@@ -42,8 +41,8 @@ const HeroSection = () => {
             <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-right bg-cover'>
                 <Image src={bigImage} alt='Main Image, Shoe, Nike' width={610} height={600} className='object-contain z-10'/>
                 <ul className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
-                    {shoes.map((item) => (
-                        <li key={item.thumbnail} className=''>
+                    {shoes.map((item, index) => (
+                        <li key={index} className=''>
                             <ShoeCard imgURL={item} onChangeImage={(item) => {setBigImage(item)}} bigShoeImage={bigImage}/>
                         </li>
                     ))}
