@@ -9,6 +9,7 @@ import PopularProductCard from './PopularProductCard';
 import ReviewCard from "./ReviewCard";
 import InfoText from "./InfoText";
 import Rating from "./Rating";
+import SectionTitle from "./SectionTitle";
 
 export {
     Header,
@@ -21,6 +22,7 @@ export {
     ServiceCard,
     ReviewCard,
     InfoText,
-    Rating
+    Rating,
+    SectionTitle
 
 }

@@ -1,10 +1,12 @@
+import dynamic from "next/dynamic";
+
 import { HeroSection } from "./HeroSection";
-import PopularProducts from "./PopularProducts";
 import CustomerReviews from "./CustomerReviews";
 import Subscribe from "./Subscribe";
-import SpecialOffer from "./SpecialOffer";
 import Services from "./Services";
-import SuperQualityProducts from './SuperQualityProducts'
+const PopularProducts = dynamic(() => import('../sections/PopularProducts'))
+const SuperQualityProducts = dynamic(() => import('../sections/SuperQualityProducts'))
+const SpecialOffer = dynamic(() => import('../sections/SpecialOffer'))
 
 export {
     HeroSection,
