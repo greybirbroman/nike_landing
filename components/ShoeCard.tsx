@@ -1,11 +1,11 @@
-'use client';
+
 import React, { FC } from 'react';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 
 interface ImgURL {
-    thumbnail: string | any;
-    bigShoe: string | any;
+    thumbnail: StaticImageData;
+    bigShoe: StaticImageData;
 }
 
 interface IShoeCard {

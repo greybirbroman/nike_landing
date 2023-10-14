@@ -4,7 +4,10 @@ import Navigation from "./Navigation";
 import Logo from "./Logo";
 import Button from "./Button";
 import ShoeCard from "./ShoeCard";
-import PopularProductCard from './PopularProductCard'
+import ServiceCard from "./ServiceCard";
+import PopularProductCard from './PopularProductCard';
+import ReviewCard from "./ReviewCard";
+import InfoText from "./InfoText";
 
 export {
     Header,
@@ -14,4 +17,8 @@ export {
     Button,
     ShoeCard,
     PopularProductCard,
+    ServiceCard,
+    ReviewCard,
+    InfoText,
+
 }
