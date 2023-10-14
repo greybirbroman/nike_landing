@@ -4,7 +4,7 @@
 ![tailwind](https://img.shields.io/badge/tailwind-F5F5F5?style=for-the-badge&logo=tailwindcss&logoColor=#06b6d4) 
 ![typescript](https://img.shields.io/badge/TypeScript-F5F5F5?style=for-the-badge&logo=typescript&logoColor=0055ff)
 
-[Deploy by Vercel]()
+[Deploy by Vercel]('https://nike-landing-sepia.vercel.app/')
 
 <h2>Небольшой проект для практики с применением UI Фреймворка - TailwindCSS</h2> 
 
