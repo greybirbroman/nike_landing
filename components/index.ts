@@ -8,6 +8,7 @@ import ServiceCard from "./ServiceCard";
 import PopularProductCard from './PopularProductCard';
 import ReviewCard from "./ReviewCard";
 import InfoText from "./InfoText";
+import Rating from "./Rating";
 
 export {
     Header,
@@ -20,5 +21,6 @@ export {
     ServiceCard,
     ReviewCard,
     InfoText,
+    Rating
 
 }
